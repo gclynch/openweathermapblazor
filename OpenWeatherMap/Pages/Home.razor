@@ -58,7 +58,7 @@ else
     {
         try
         {
-            string uri = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=32bba11ff58f40d065c257bcd0d4304c";
+            string uri = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=32bba11ff58f40d065c257bcd0d4304c";
             // CORS needs to be enabled on API, caveat: do not configure https in template
             data = await Http.GetFromJsonAsync<Root>(uri);
             found = true;
