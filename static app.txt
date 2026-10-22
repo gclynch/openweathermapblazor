@@ -1,0 +1,7 @@
+
+https://zealous-wave-07e461f03.3.azurestaticapps.net
+
+azure-static-web-apps-zealous-wave-07e461f03.yml
+
+create a static app - select repo, leave api blank
+

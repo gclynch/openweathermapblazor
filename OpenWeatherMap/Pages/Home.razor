@@ -15,7 +15,7 @@
 else
 {
     <div>
-        <label for="city">City</label>
+        <label for="city">Location</label>
         <input id="city" @bind="city" />
         <p></p>
     </div>
@@ -29,16 +29,16 @@ else
             Description: @data.weather[0].description
         </div>
         <div>
-            Temperature(C): @(data.main.temp - 273.15)
+            Temperature(C): @Math.Round(data.main.temp - 273.15, 2)
         </div>
         <div>
-            Feels like(C):  @(data.main.feels_like - 273.5)
+            Feels like(C):  @Math.Round(data.main.feels_like - 273.15, 2)
         </div>
         <div>
-            Humidity(%): @(data.main.humidity)
+            Humidity(%): @data.main.humidity
         </div>
         <div>
-            Wind Speed:  @(data.wind.speed) km/h
+            Wind Speed:  @Math.Round(data.wind.speed, 2) km/h
         </div>
     }
 
